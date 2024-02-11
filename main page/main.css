@@ -23,7 +23,7 @@ h5{
 }
 #text-overlay{
     background: url('../src/coffee.jpg') ,  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-size: 100%;
+    background-size: 100% no-repeat;
     height:100vh;
    color: hsl(30, 10%, 34%);
 }
@@ -134,11 +134,62 @@ a#contact, #copyright{
     font-size: 1.2rem;
     margin:1.2rem;
 }
+.container.typewriter-effect {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: max-content;
+}
+
+
+#club{
+    font-family:'Young Serif', serif ;
+    color:#7f6a53;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+   
+    animation: typing 2s steps(30) forwards;
+}
+
+@keyframes typing {
+    from { width : 0}
+     to {
+        width: 100%; 
+    }
+}
+#image2{
+    height:25rem;
+    border-radius: 20px;
+    padding:0.5rem;
+}
+#content-one{
+    padding:2rem;
+}
+#content-two{
+    padding: 0.2rem 2rem;
+    font-family:  'Outfit', sans-serif;
+    font-size: 1rem;
+}
+#last-button{
+    margin-left: 1.7rem;
+}
+.container-last{
+    display:grid;
+    grid-template-columns: 25rem 30rem;
+    height: min-content;
+    width: min-content;
+    border:2px solid #7b284f;
+    margin:2rem;
+    margin-left: 14%;
+    gap:3px;
+    border-radius:15px;
+}
+
 
 @media (max-width:900px){
     .recipe-cards{
         height:18rem;
-
     }
     
 }
@@ -151,5 +202,10 @@ a#contact, #copyright{
         margin:1.3rem;
         width:23rem;
         height:15rem;
+    }
+}
+@media (max-width:1060){
+    .container-last{
+        margin-left:1%;
     }
 }
