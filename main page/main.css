@@ -180,8 +180,7 @@ a#contact, #copyright{
     height: min-content;
     width: min-content;
     border:2px solid #7b284f;
-    margin:2rem;
-    margin-left: 14%;
+    margin:auto;
     gap:3px;
     border-radius:15px;
 }
@@ -191,7 +190,13 @@ a#contact, #copyright{
     .recipe-cards{
         height:18rem;
     }
-    
+    .container-last{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #content-one{
+        padding:0.5rem 2rem;
+    }
 }
 
 @media (max-width:730px){
@@ -202,10 +207,5 @@ a#contact, #copyright{
         margin:1.3rem;
         width:23rem;
         height:15rem;
-    }
-}
-@media (max-width:1060){
-    .container-last{
-        margin-left:1%;
     }
 }
